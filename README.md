@@ -1,4 +1,4 @@
-# Ejercicio 1 - Contador Simple
+# Contador Simple
 
 Este ejercicio consiste en crear un contador utilizando React y el hook `useState`.
 
