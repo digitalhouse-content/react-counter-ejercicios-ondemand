@@ -1,14 +1,16 @@
+import {useState} from "react";
 
 function App() {
+	const [count, setCount] = useState(0);
 
-  return (
-    <div className="container">
-      <h1>Contador: 0</h1>
-      <button onClick={() => {}}>+</button>
-      <button onClick={() => {}}>-</button>
-      <button onClick={() => {}}>Reset</button>
-    </div>
-  );
+	return (
+		<div className="container">
+			<h1>Contador: {count}</h1>
+			<button onClick={() => setCount(count + 1)}>+</button>
+			<button onClick={() => setCount(count - 1)}>-</button>
+			<button onClick={() => setCount(0)}>Reset</button>
+		</div>
+	);
 }
 
 export default App;
